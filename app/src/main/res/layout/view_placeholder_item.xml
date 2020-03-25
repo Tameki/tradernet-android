@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="12dp"
+    android:paddingVertical="16dp">
+
+    <View
+        android:id="@+id/placeholder_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorShimmer"/>
+
+    <View
+        android:id="@+id/placeholder_code"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/placeholder_icon"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorShimmer"
+        android:text="FEES"/>
+
+    <View
+        android:id="@+id/placeholder_info"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_code"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorShimmer"/>
+
+    <View
+        android:id="@+id/placeholder_price_change_percent"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="24dp"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
+        android:background="@color/colorShimmer"/>
+
+    <View
+        android:id="@+id/placeholder_price_info"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_info"
+        app:layout_constraintEnd_toEndOf="@+id/placeholder_price_change_percent"
+        android:background="@color/colorShimmer"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_chevron_right"
+        android:tint="@color/colorShimmer"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
